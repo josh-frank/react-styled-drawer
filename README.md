@@ -8,7 +8,14 @@ A drawer component for the React/Next family with `styled-components`.
 import Drawer from "react-styled-drawer";
 ...
 return (
-    <Drawer position={ ... } height={ ... } width={ ... } offset={ ... }> ... </Drawer>
+    <Drawer
+        position={ ... }
+        height={ ... }
+        width={ ... }
+        offset={ ... }
+    >
+        ...
+    </Drawer>
 );
 ```
 
