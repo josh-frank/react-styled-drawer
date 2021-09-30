@@ -31,7 +31,7 @@ return (
     <tr>
       <td><code>height</code></td>
       <td rowspan="2">string/integer</td>
-      <td rowspan="2">Use any valid DOM size measurement like <code>%</code>, <code>rem</code>, <code>vh/vw</code>, etc.</td>
+      <td rowspan="2">Use any valid DOM size measurement like <code>%</code>, <code>rem</code>, <code>vh</code>/<code>vw</code>, etc.</td>
     </tr>
     <tr>
       <td><code>width</code></td>
