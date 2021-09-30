@@ -1,7 +1,8 @@
 import { useState } from "react";
+
 import styled from "styled-components";
 
-export default function Drawer( { children, position, height, width, offset } ) {
+export default function Drawer( { children, position, backgroundColor, height, width, offset } ) {
 
     const [ showDrawer, setShowDrawer ] = useState( false );
 
@@ -14,6 +15,7 @@ export default function Drawer( { children, position, height, width, offset } ) 
     return (
         <DrawerContainer
             position={ position }
+            backgroundColor={ backgroundColor }
             height={ height }
             width={ width }
             offset={ offset }
@@ -53,7 +55,7 @@ const DrawerContainer = styled.div`
             default: return "";
         }
     } }
-    background-color: #eee;
+    background-color: ${ ( { backgroundColor } ) => backgroundColor || "inherit" };
     display: flex;
     flex-direction: ${ ( { position } ) => [ "left", "right" ].includes( position ) ? "row" : "column" };
     transition: all 0.25s ease;

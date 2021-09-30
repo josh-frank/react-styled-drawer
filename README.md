@@ -9,9 +9,10 @@ import Drawer from "react-styled-drawer";
 ...
 return (
     <Drawer
-        position={ ... }
-        height={ ... }
-        width={ ... }
+        position="..."
+        backgroundColor="..."
+        height="..."
+        width="..."
         offset={ ... }
     >
         ...
@@ -34,6 +35,11 @@ return (
       <td><code>position</code></td>
       <td>string</td>
       <td>Must be one of <code>[ "top", "bottom", "left", "right" ]</code></td>
+    </tr>
+    <tr>
+      <td><code>backgroundColor</code></td>
+      <td>string</td>
+      <td>Must be a valid CSS color like <code>lightblue</code> or <code>#eee</code> or <code>rgba( 255, 255, 0, 0.5 )</code></td>
     </tr>
     <tr>
       <td><code>height</code></td>
