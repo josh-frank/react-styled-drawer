@@ -29,7 +29,7 @@ export default function Drawer( { children, position, height, width, offset } ) 
 };
 
 const DrawerContainer = styled.div`
-    position: absolute;
+    position: fixed;
     ${ ( { position, show, height, width, offset } ) => {
         const offsetStyle = Object.keys( offset || {} ).reduce( ( finishedOffsetStyle, sideToOffset ) => ( ( [ "top", "bottom" ].includes( position ) && [ "left","right" ].includes( sideToOffset ) ) ) || ( ( [ "left", "right" ].includes( position ) && [ "top","bottom" ].includes( sideToOffset ) ) ) ? `${ sideToOffset }: ${ offset[ sideToOffset ] }; ${ finishedOffsetStyle }` : finishedOffsetStyle, "" );
         const positionRule = show ? "0" : `-${ [ "top", "bottom" ].includes( position ) ? height : width }`;
