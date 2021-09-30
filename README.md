@@ -57,8 +57,8 @@ return (
             <li>Must be a single key/value pair</li>
             <li>Key must be one of <code>[ "top", "bottom", "left", "right" ]</code></li>
             <li>Value must be a valid DOM size measurement as for <code>height</code>/<code>width</code></li>
-            <li><span style="color: green">Correct: <code>{ top: "5vh" }</code></span<</li>
-            <li><span style="color: red">Incorrect: <code>{ left: "10px", offsetTop: "5vh" }</code></span></li>
+            <li><span style="color:green;">Correct: <code>{ top: "5vh" }</code></span<</li>
+            <li><span style="color:red;">Incorrect: <code>{ left: "10px", offsetTop: "5vh" }</code></span></li>
         </ul>
       </td>
     </tr>
