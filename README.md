@@ -1,6 +1,6 @@
 # react-styled-drawer
 
-A drawer component for the React/Next family with styled-components.
+A drawer component for the React/Next family with `styled-components`.
 
 ## Use
 
@@ -8,7 +8,7 @@ A drawer component for the React/Next family with styled-components.
 import Drawer from "react-styled-drawer";
 ...
 return (
-    <Drawer position={} height={} width={} offset={}> ... </Drawer>
+    <Drawer position={ ... } height={ ... } width={ ... } offset={ ... }> ... </Drawer>
 );
 ```
 
@@ -42,7 +42,7 @@ return (
       <td>
         <ul>
             <li>Must be a single key/value pair</li>
-            <li>Key must be one of `[ "top", "bottom", "left", "right" ]`</li>
+            <li>Key must be one of <code>[ "top", "bottom", "left", "right" ]</code></li>
             <li>Value must be a valid DOM size measurement as for <code>height</code>/<code>width</code></li>
             <li>Correct: <code>{ top: "5vh" }</code></li>
             <li>Incorrect: <code>{ left: "10px", offsetTop: "5vh" }</code></li>
